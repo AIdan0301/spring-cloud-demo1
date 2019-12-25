@@ -4,3 +4,5 @@ spring:
     url: jdbc:mysql://62.234.10.119:3306/xlink_dev?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai&useAffectedRows=true
     username: root
     password: ljkj!@$#loj898ok
+
+jdbc: 6666
