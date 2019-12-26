@@ -1,0 +1,30 @@
+server:
+  port: 2006
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2004/eureka
+
+spring:
+  application:
+    name: config-service
+
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+#        git:
+#          uri: https://github.com/AIdan0301/spring-cloud-demo1.git
+#          search-paths: config-repo #配置中心
+#          username: AIdan0301      # 用户名
+#          password: AIHMQdan0301      # 密码
+        native:
+          search-locations: classpath:/shared
+
+#  rabbitmq:					#本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
