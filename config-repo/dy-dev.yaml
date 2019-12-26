@@ -1,0 +1,18 @@
+server:
+  port: 2005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2004/eureka/ #注册中心的地址
+spring:
+  application:
+    name: dy-client-service
+  cloud:
+    config:
+      name: config
+      profile: pro
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service #server端的应用名
