@@ -1,0 +1,26 @@
+server:
+  port: 2007
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2004/eureka
+spring:
+  application:
+    name: api-service
+#  cloud:
+#    config:
+#      name: config
+#      profile: pro
+#      label: master
+#      discovery:
+#        enabled: true
+#        service-id: config-service #server端的应用名
+
+
+zuul:
+  routes:
+    dy-client-service:
+      path: /dy/**
+      url: dy-client-service
+
