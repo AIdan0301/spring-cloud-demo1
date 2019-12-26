@@ -8,14 +8,14 @@ eureka:
 spring:
   application:
     name: api-service
-#  cloud:
-#    config:
-#      name: config
-#      profile: pro
-#      label: master
-#      discovery:
-#        enabled: true
-#        service-id: config-service #server端的应用名
+  cloud:
+    config:
+      name: config
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service #server端的应用名
 
 
 zuul:
