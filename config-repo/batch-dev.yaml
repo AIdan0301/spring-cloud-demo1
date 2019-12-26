@@ -1,0 +1,18 @@
+server:
+  port: 2002
+spring:
+  application:
+    name: batch-admin-service
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2004/eureka
+#mybatis:
+#  type-aliases-package: com.xft.model
+#  mapper-locations: classpath*:/com/xft/dao/mapper/*Mapper.xml
+
+
